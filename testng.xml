@@ -1,8 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Zestaw testow cz2" verbose="1">
-    <test name="OknaDialogowe" preserve-order="true" enabled="true">
+    <test name="OknaDialogowe" preserve-order="true" enabled="false">
         <classes>
             <class name="alerts.Alerts"></class>
+        </classes>
+    </test>
+
+    <test name="POP1" preserve-order="true" enabled="true">
+        <classes>
+            <class name="AddressBookTest"></class>
         </classes>
     </test>
 </suite>

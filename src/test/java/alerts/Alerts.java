@@ -11,7 +11,13 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
+import javax.imageio.ImageIO;
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class Alerts {
@@ -27,7 +33,7 @@ public class Alerts {
         driver.get("http://testpages.herokuapp.com/styled/alerts/alert-test.html");
     }
 
-    @Test(testName = "Alert")
+    @Test(testName = "Alert", enabled = false)
     public void alertTest() {
         driver.findElement(By.id("alertexamples")).click();
         new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
@@ -37,7 +43,7 @@ public class Alerts {
         alert.accept();
     }
 
-    @Test
+    @Test(enabled = false)
     public void confirmTest() {
         driver.findElement(By.id("confirmexample")).click();
         new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
@@ -52,7 +58,7 @@ public class Alerts {
         Assert.assertEquals(result2, "false");
     }
 
-    @Test
+    @Test(enabled = false)
     public void promptTest() {
         driver.findElement(By.id("promptexample")).click();
         new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
@@ -61,8 +67,17 @@ public class Alerts {
         alert.accept();
         String result = driver.findElement(By.id("promptreturn")).getText();
         Assert.assertEquals(result, "Text");
+    }
 
-
+    @Test
+    public void screenshotTest() {
+        driver.get("https://www.onet.pl/");
+        Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(500)).takeScreenshot(driver);
+        try {
+            ImageIO.write(screenshot.getImage(), "jpg", new File("./screenshots/onet.jpg"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @AfterClass(alwaysRun = true)

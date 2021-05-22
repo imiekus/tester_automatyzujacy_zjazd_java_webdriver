@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Zestaw testow cz2" duration-ms="1985" started-at="2021-05-22T10:40:39 CEST" finished-at="2021-05-22T10:40:41 CEST">
+  <suite name="Zestaw testow cz2" duration-ms="2774" started-at="2021-05-22T12:48:01 CEST" finished-at="2021-05-22T12:48:03 CEST">
     <groups>
     </groups>
-    <test name="OknaDialogowe" duration-ms="1985" started-at="2021-05-22T10:40:39 CEST" finished-at="2021-05-22T10:40:41 CEST">
-      <class name="alerts.Alerts">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:alerts.Alerts@22a67b4]" name="setUp" is-config="true" duration-ms="1575" started-at="2021-05-22T10:40:39 CEST" finished-at="2021-05-22T10:40:41 CEST">
+    <test name="POP1" duration-ms="2774" started-at="2021-05-22T12:48:01 CEST" finished-at="2021-05-22T12:48:03 CEST">
+      <class name="AddressBookTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AddressBookTest@a7e666]" name="setUp" is-config="true" duration-ms="1383" started-at="2021-05-22T12:48:01 CEST" finished-at="2021-05-22T12:48:02 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="primptTest()[pri:0, instance:alerts.Alerts@22a67b4]" name="primptTest" duration-ms="301" started-at="2021-05-22T10:40:41 CEST" finished-at="2021-05-22T10:40:41 CEST">
+        <test-method status="PASS" signature="mainTest()[pri:0, instance:AddressBookTest@a7e666]" name="mainTest" duration-ms="1268" started-at="2021-05-22T12:48:02 CEST" finished-at="2021-05-22T12:48:03 CEST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- primptTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:alerts.Alerts@22a67b4]" name="tearDown" is-config="true" duration-ms="76" started-at="2021-05-22T10:40:41 CEST" finished-at="2021-05-22T10:40:41 CEST">
+        </test-method> <!-- mainTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:AddressBookTest@a7e666]" name="tearDown" is-config="true" duration-ms="78" started-at="2021-05-22T12:48:03 CEST" finished-at="2021-05-22T12:48:03 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- alerts.Alerts -->
-    </test> <!-- OknaDialogowe -->
+      </class> <!-- AddressBookTest -->
+    </test> <!-- POP1 -->
   </suite> <!-- Zestaw testow cz2 -->
 </testng-results>
