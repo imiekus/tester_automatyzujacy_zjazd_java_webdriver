@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Zestaw testow cz2" duration-ms="2352" started-at="2021-05-22T10:04:23 CEST" finished-at="2021-05-22T10:04:26 CEST">
+    <groups>
+    </groups>
+    <test name="OknaDialogowe" duration-ms="2352" started-at="2021-05-22T10:04:23 CEST" finished-at="2021-05-22T10:04:26 CEST">
+      <class name="alerts.Alerts">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:alerts.Alerts@22a67b4]" name="setUp" is-config="true" duration-ms="1920" started-at="2021-05-22T10:04:23 CEST" finished-at="2021-05-22T10:04:25 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="alertTest()[pri:0, instance:alerts.Alerts@22a67b4]" name="alertTest" duration-ms="302" started-at="2021-05-22T10:04:25 CEST" finished-at="2021-05-22T10:04:25 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:alerts.Alerts@22a67b4]" name="tearDown" is-config="true" duration-ms="73" started-at="2021-05-22T10:04:25 CEST" finished-at="2021-05-22T10:04:26 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- alerts.Alerts -->
+    </test> <!-- OknaDialogowe -->
+  </suite> <!-- Zestaw testow cz2 -->
+</testng-results>
