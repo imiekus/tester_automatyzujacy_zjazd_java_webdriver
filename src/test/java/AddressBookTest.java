@@ -1,11 +1,12 @@
+import net.bytebuddy.utility.RandomString;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pop.HomePage;
-import pop.SignInPage;
-import pop.SignUpPage;
+import pop.*;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,6 +16,9 @@ public class AddressBookTest {
     public HomePage homePage;
     public SignInPage signInPage;
     public SignUpPage signUpPage;
+    public AddressesListPage addressesListPage;
+    public NewAddressPage newAddressPage;
+    public ShowAddressPage showAddressPage;
 
     @BeforeClass
     public void setUp() {
@@ -26,13 +30,19 @@ public class AddressBookTest {
 
     @Test
     public void mainTest() {
-        String email = "authlunaqa@gmail.com";
-        String password = "authlunaqa@gmail.com";
+        String email = RandomString.make(5) + "@upsmail.com";
+        String password = "zxcvpoiu1209";
+        String[] dane = {"Ania", "Bania", "Cichutka 5", "Ciechocinek", "54300"};
         driver.get("http://a.testaddressbook.com/");
         homePage = new HomePage(driver);
         signInPage = homePage.gotoSignInPage();
         signUpPage = signInPage.goToSignUpLink();
         signUpPage.fillRegisterForm(email, password);
+        addressesListPage = homePage.gotoAddressesPage();
+        newAddressPage = addressesListPage.goToNewAddressPage();
+        showAddressPage = newAddressPage.fillAndSendForm(dane);
+        String successText = driver.findElement(By.xpath("//div[@data-test='notice']")).getText();
+        Assert.assertEquals(successText, "Address was successfully created.");
     }
 
     @AfterClass(alwaysRun = true)

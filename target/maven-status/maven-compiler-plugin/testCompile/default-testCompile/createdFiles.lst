@@ -1,5 +1,8 @@
 pop/HomePage.class
+pop/AddressesListPage.class
+pop/NewAddressPage.class
 AddressBookTest.class
+pop/ShowAddressPage.class
 alerts/Alerts.class
 pop/SignInPage.class
 pop/SignUpPage.class
