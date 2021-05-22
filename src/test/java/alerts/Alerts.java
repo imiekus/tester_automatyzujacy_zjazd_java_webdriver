@@ -37,6 +37,34 @@ public class Alerts {
         alert.accept();
     }
 
+    @Test
+    public void confirmTest() {
+        driver.findElement(By.id("confirmexample")).click();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
+        Alert alert = driver.switchTo().alert();
+        alert.accept();
+        String result = driver.findElement(By.id("confirmreturn")).getText();
+        Assert.assertEquals(result, "true");
+        driver.findElement(By.id("confirmexample")).click();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
+        alert.dismiss();
+        String result2 =driver.findElement(By.id("confirmreturn")).getText();
+        Assert.assertEquals(result2, "false");
+    }
+
+    @Test
+    public void promptTest() {
+        driver.findElement(By.id("promptexample")).click();
+        new WebDriverWait(driver, 5).until(ExpectedConditions.alertIsPresent());
+        Alert alert = driver.switchTo().alert();
+        alert.sendKeys("Text");
+        alert.accept();
+        String result = driver.findElement(By.id("promptreturn")).getText();
+        Assert.assertEquals(result, "Text");
+
+
+    }
+
     @AfterClass(alwaysRun = true)
     public void tearDown() {
         driver.quit();
