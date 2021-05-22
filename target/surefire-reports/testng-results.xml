@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Zestaw testow cz2" duration-ms="2774" started-at="2021-05-22T12:48:01 CEST" finished-at="2021-05-22T12:48:03 CEST">
+  <suite name="Zestaw testow cz2" duration-ms="3961" started-at="2021-05-22T13:19:08 CEST" finished-at="2021-05-22T13:19:12 CEST">
     <groups>
     </groups>
-    <test name="POP1" duration-ms="2774" started-at="2021-05-22T12:48:01 CEST" finished-at="2021-05-22T12:48:03 CEST">
+    <test name="POP1" duration-ms="3961" started-at="2021-05-22T13:19:08 CEST" finished-at="2021-05-22T13:19:12 CEST">
       <class name="AddressBookTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:AddressBookTest@a7e666]" name="setUp" is-config="true" duration-ms="1383" started-at="2021-05-22T12:48:01 CEST" finished-at="2021-05-22T12:48:02 CEST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:AddressBookTest@a7e666]" name="setUp" is-config="true" duration-ms="1049" started-at="2021-05-22T13:19:08 CEST" finished-at="2021-05-22T13:19:09 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mainTest()[pri:0, instance:AddressBookTest@a7e666]" name="mainTest" duration-ms="1268" started-at="2021-05-22T12:48:02 CEST" finished-at="2021-05-22T12:48:03 CEST">
+        <test-method status="PASS" signature="mainTest()[pri:0, instance:AddressBookTest@a7e666]" name="mainTest" duration-ms="2683" started-at="2021-05-22T13:19:09 CEST" finished-at="2021-05-22T13:19:12 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mainTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:AddressBookTest@a7e666]" name="tearDown" is-config="true" duration-ms="78" started-at="2021-05-22T12:48:03 CEST" finished-at="2021-05-22T12:48:03 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:AddressBookTest@a7e666]" name="tearDown" is-config="true" duration-ms="148" started-at="2021-05-22T13:19:12 CEST" finished-at="2021-05-22T13:19:12 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

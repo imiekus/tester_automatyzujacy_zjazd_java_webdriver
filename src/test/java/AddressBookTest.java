@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pop.HomePage;
 import pop.SignInPage;
+import pop.SignUpPage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,6 +14,7 @@ public class AddressBookTest {
     public WebDriver driver;
     public HomePage homePage;
     public SignInPage signInPage;
+    public SignUpPage signUpPage;
 
     @BeforeClass
     public void setUp() {
@@ -24,9 +26,13 @@ public class AddressBookTest {
 
     @Test
     public void mainTest() {
+        String email = "authlunaqa@gmail.com";
+        String password = "authlunaqa@gmail.com";
         driver.get("http://a.testaddressbook.com/");
         homePage = new HomePage(driver);
         signInPage = homePage.gotoSignInPage();
+        signUpPage = signInPage.goToSignUpLink();
+        signUpPage.fillRegisterForm(email, password);
     }
 
     @AfterClass(alwaysRun = true)
