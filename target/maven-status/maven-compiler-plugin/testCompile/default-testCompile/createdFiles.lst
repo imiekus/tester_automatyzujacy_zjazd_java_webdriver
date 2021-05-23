@@ -1,11 +1,14 @@
 pop/HomePage.class
-pop/AddressesListPage.class
+pop/shop/AuthenticationPage.class
 pop/blazeDemo/RegisterPage.class
 pop/NewAddressPage.class
-AddressBookTest.class
 BlazeDemoTest.class
 pop/ShowAddressPage.class
 alerts/Alerts.class
-pop/SignInPage.class
 pop/SignUpPage.class
 pop/blazeDemo/LoginPage.class
+pop/shop/HomePage.class
+pop/AddressesListPage.class
+AddressBookTest.class
+ShopTest.class
+pop/SignInPage.class

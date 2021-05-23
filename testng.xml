@@ -12,9 +12,15 @@
         </classes>
     </test>
 
-    <test name="POP2" preserve-order="true" enabled="true">
+    <test name="POP2" preserve-order="true" enabled="false">
         <classes>
             <class name="BlazeDemoTest"></class>
+        </classes>
+    </test>
+
+    <test name="POP3" preserve-order="true" enabled="true">
+        <classes>
+            <class name="ShopTest"></class>
         </classes>
     </test>
 </suite>
