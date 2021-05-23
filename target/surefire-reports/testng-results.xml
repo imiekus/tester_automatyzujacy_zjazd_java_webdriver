@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Zestaw testow cz2" duration-ms="5950" started-at="2021-05-22T15:02:10 CEST" finished-at="2021-05-22T15:02:16 CEST">
+  <suite name="Zestaw testow cz2" duration-ms="4990" started-at="2021-05-23T10:13:16 CEST" finished-at="2021-05-23T10:13:21 CEST">
     <groups>
     </groups>
-    <test name="POP1" duration-ms="5950" started-at="2021-05-22T15:02:10 CEST" finished-at="2021-05-22T15:02:16 CEST">
-      <class name="AddressBookTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:AddressBookTest@a7e666]" name="setUp" is-config="true" duration-ms="980" started-at="2021-05-22T15:02:10 CEST" finished-at="2021-05-22T15:02:11 CEST">
+    <test name="POP2" duration-ms="4990" started-at="2021-05-23T10:13:16 CEST" finished-at="2021-05-23T10:13:21 CEST">
+      <class name="BlazeDemoTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BlazeDemoTest@a7e666]" name="setUp" is-config="true" duration-ms="1177" started-at="2021-05-23T10:13:17 CEST" finished-at="2021-05-23T10:13:18 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mainTest()[pri:0, instance:AddressBookTest@a7e666]" name="mainTest" duration-ms="4859" started-at="2021-05-22T15:02:11 CEST" finished-at="2021-05-22T15:02:16 CEST">
+        <test-method status="PASS" signature="mainTest()[pri:0, instance:BlazeDemoTest@a7e666]" name="mainTest" duration-ms="3648" started-at="2021-05-23T10:13:18 CEST" finished-at="2021-05-23T10:13:21 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mainTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:AddressBookTest@a7e666]" name="tearDown" is-config="true" duration-ms="74" started-at="2021-05-22T15:02:16 CEST" finished-at="2021-05-22T15:02:16 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BlazeDemoTest@a7e666]" name="tearDown" is-config="true" duration-ms="71" started-at="2021-05-23T10:13:21 CEST" finished-at="2021-05-23T10:13:21 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- AddressBookTest -->
-    </test> <!-- POP1 -->
+      </class> <!-- BlazeDemoTest -->
+    </test> <!-- POP2 -->
   </suite> <!-- Zestaw testow cz2 -->
 </testng-results>

@@ -17,13 +17,13 @@ public class RegisterPage {
         this.driver = driver;
     }
 
-    public void fillAndSendForm(String[] data){
+    public LoginPage fillAndSendForm(String[] data){
         driver.findElement(name).sendKeys(data[0]);
         driver.findElement(company).sendKeys(data[1]);
         driver.findElement(email).sendKeys(data[2]);
         driver.findElement(password).sendKeys(data[3]);
         driver.findElement(confirmPassword).sendKeys(data[4]);
         driver.findElement(button).click();
-
+        return new LoginPage(driver);
     }
 }
