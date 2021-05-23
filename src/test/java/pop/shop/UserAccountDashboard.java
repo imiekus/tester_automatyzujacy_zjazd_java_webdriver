@@ -11,6 +11,8 @@ public class UserAccountDashboard {
     private WebDriver driver;
     @FindBy(className = "info-account")
     private WebElement accountWelcome;
+    @FindBy(xpath = "//a[@title='View my customer account']/span")
+    private WebElement accountInfo;
 
 
     public UserAccountDashboard(WebDriver driver) {

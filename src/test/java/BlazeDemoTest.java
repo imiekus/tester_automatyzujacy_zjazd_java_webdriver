@@ -4,6 +4,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import pop.blazeDemo.LoginPage;
 import pop.blazeDemo.RegisterPage;
@@ -26,8 +27,15 @@ public class BlazeDemoTest {
     }
 
     @Test
-    public void mainTest() {
-        String[] dane = {"Ania", "CDV", "randjij2ejsgnq@randjejwj.com", "password1234!", "password1234!"};
+    @Parameters({"name", "company", "email", "passwd"})
+    public void mainTest(String name, String company, String email, String passwd) {
+        String[] dane = new String[5];
+        dane[0] = name;
+        dane[1] = company;
+        dane[2] = email;
+        dane[3] = passwd;
+        dane[4] = passwd;
+//        String[] dane = {"Ania", "CDV", "randjij2ejsgnq@randjejwj.com", "password1234!", "password1234!"}; // after data-driven was introduced
         loginPage = new LoginPage(driver);
         driver.get("https://blazedemo.com/login");
         registerPage = loginPage.goToRegisterLink();

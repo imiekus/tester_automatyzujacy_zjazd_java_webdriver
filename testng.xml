@@ -12,13 +12,17 @@
         </classes>
     </test>
 
-    <test name="POP2" preserve-order="true" enabled="false">
+    <test name="POP2" preserve-order="true" enabled="true">
         <classes>
             <class name="BlazeDemoTest"></class>
+            <parameter name="name" value="Ania"></parameter>
+            <parameter name="company" value="CDV"></parameter>
+            <parameter name="email" value="gsdjfgnbvsj@sdfs.pl"></parameter>
+            <parameter name="passwd" value="haslo123"></parameter>
         </classes>
     </test>
 
-    <test name="POP3" preserve-order="true" enabled="true">
+    <test name="POP3" preserve-order="true" enabled="false">
         <classes>
             <class name="ShopTest"></class>
         </classes>

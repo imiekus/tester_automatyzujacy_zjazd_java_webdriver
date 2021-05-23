@@ -2,24 +2,46 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Zestaw testow cz2" duration-ms="14976" started-at="2021-05-23T13:24:21 CEST" finished-at="2021-05-23T13:24:36 CEST">
+  <suite name="Zestaw testow cz2" duration-ms="4981" started-at="2021-05-23T14:01:19 CEST" finished-at="2021-05-23T14:01:24 CEST">
     <groups>
     </groups>
-    <test name="POP3" duration-ms="14976" started-at="2021-05-23T13:24:21 CEST" finished-at="2021-05-23T13:24:36 CEST">
-      <class name="ShopTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ShopTest@a7e666]" name="setUp" is-config="true" duration-ms="1101" started-at="2021-05-23T13:24:21 CEST" finished-at="2021-05-23T13:24:22 CEST">
+    <test name="POP2" duration-ms="4981" started-at="2021-05-23T14:01:19 CEST" finished-at="2021-05-23T14:01:24 CEST">
+      <class name="BlazeDemoTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:BlazeDemoTest@7c29daf3]" name="setUp" is-config="true" duration-ms="1241" started-at="2021-05-23T14:01:19 CEST" finished-at="2021-05-23T14:01:20 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="mainTest()[pri:0, instance:ShopTest@a7e666]" name="mainTest" duration-ms="13739" started-at="2021-05-23T13:24:22 CEST" finished-at="2021-05-23T13:24:36 CEST">
+        <test-method status="PASS" signature="mainTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:BlazeDemoTest@7c29daf3]" name="mainTest" duration-ms="3620" started-at="2021-05-23T14:01:20 CEST" finished-at="2021-05-23T14:01:24 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ania]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[CDV]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[gsdjfgnbvsj@sdfs.pl]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[haslo123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mainTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ShopTest@a7e666]" name="tearDown" is-config="true" duration-ms="94" started-at="2021-05-23T13:24:36 CEST" finished-at="2021-05-23T13:24:36 CEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:BlazeDemoTest@7c29daf3]" name="tearDown" is-config="true" duration-ms="78" started-at="2021-05-23T14:01:24 CEST" finished-at="2021-05-23T14:01:24 CEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ShopTest -->
-    </test> <!-- POP3 -->
+      </class> <!-- BlazeDemoTest -->
+    </test> <!-- POP2 -->
   </suite> <!-- Zestaw testow cz2 -->
 </testng-results>
