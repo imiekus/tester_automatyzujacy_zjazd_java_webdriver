@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pop.shop.AuthenticationPage;
 import pop.shop.HomePage;
+import pop.shop.UserAccountDashboard;
 
 import java.util.concurrent.TimeUnit;
 
@@ -13,6 +14,7 @@ public class ShopTest {
     public WebDriver driver;
     public HomePage homePage;
     public AuthenticationPage authenticationPage;
+    public UserAccountDashboard userAccountDashboard;
 
     @BeforeClass
     public void setUp() {
@@ -24,11 +26,22 @@ public class ShopTest {
 
     @Test
     public void mainTest() {
+        String[] data = new String[8];
+        data[0] = "Ania";
+        data[1] = "Bania";
+        data[2] = "Password12345";
+        data[3] = "Cichutka 500";
+        data[4] = "New York";
+        data[5] = "New York";
+        data[6] = "38122";
+        data[7] = "337890654";
         String email = RandomString.make(5) + "@upsmail.com";
         driver.get("http://automationpractice.com/index.php");
         homePage = new HomePage(driver);
         authenticationPage= homePage.goToAuthenticationPage();
         authenticationPage.fillAndSendEmail(email);
+        userAccountDashboard = authenticationPage.fillAndSendRegisterForm(data);
+        userAccountDashboard.checkMyAccountInfoExists();
     }
 
     @AfterClass(alwaysRun = true)

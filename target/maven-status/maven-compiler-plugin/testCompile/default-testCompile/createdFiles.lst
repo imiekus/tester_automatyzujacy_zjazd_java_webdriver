@@ -1,6 +1,7 @@
 pop/HomePage.class
 pop/shop/AuthenticationPage.class
 pop/blazeDemo/RegisterPage.class
+pop/shop/UserAccountDashboard.class
 pop/NewAddressPage.class
 BlazeDemoTest.class
 pop/ShowAddressPage.class
