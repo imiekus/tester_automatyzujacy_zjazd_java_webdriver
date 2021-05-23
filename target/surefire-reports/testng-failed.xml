@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Zestaw testow cz2]">
+  <test thread-count="5" verbose="0" name="POP2(failed)">
+    <classes>
+      <class name="BlazeDemoTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="mainTest"/>
+        </methods>
+      </class> <!-- BlazeDemoTest -->
+    </classes>
+  </test> <!-- POP2(failed) -->
+</suite> <!-- Failed suite [Zestaw testow cz2] -->

@@ -27,13 +27,13 @@ public class BlazeDemoTest {
 
     @Test
     public void mainTest() {
-        String[] dane = {"Ania", "CDV", "randjij2ejsnq@randjejwj.com", "password1234!", "password1234!"};
+        String[] dane = {"Ania", "CDV", "randjij2ejsgnq@randjejwj.com", "password1234!", "password1234!"};
         loginPage = new LoginPage(driver);
         driver.get("https://blazedemo.com/login");
         registerPage = loginPage.goToRegisterLink();
         loginPage = registerPage.fillAndSendForm(dane);
         String message = driver.findElement(By.className("message")).getText();
-        Assert.assertEquals(message, "Page Expired");
+        Assert.assertEquals(message, "Page Expired"); // sometimes works like this, sometimes goes to login page, sometimes to dashboard...
     }
 
     @AfterClass(alwaysRun = true)
